@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams Bakery - Artisan Baked Goods in Chicago</title>
+    <meta name="description" content="Sweet Dreams Bakery in Chicago creates artisan breads, custom cakes, and fresh pastries daily. Order online for pickup or delivery. Fresh ingredients, traditional recipes.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-birthday-cake text-pink me-2"></i>Sweet Dreams Bakery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Order Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="floating-elements">
+            <div class="floating-donut">🍩</div>
+            <div class="floating-croissant">🥐</div>
+            <div class="floating-cupcake">🧁</div>
+        </div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="display-3 fw-bold mb-4">Baked with <span class="text-pink">Love</span> Daily</h1>
+                        <p class="lead mb-4">Artisan bakery in the heart of Chicago, creating fresh breads, custom cakes, and delicious pastries since 1992. Every treat is made with the finest ingredients and traditional recipes passed down through generations.</p>
+                        
+                        <div class="hero-features">
+                            <div class="row text-center">
+                                <div class="col-lg-4 mb-3">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-seedling"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Fresh Daily</h6>
+                                    <small class="text-muted">Baked fresh every morning</small>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Made with Love</h6>
+                                    <small class="text-muted">Traditional family recipes</small>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-truck"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Delivery Available</h6>
+                                    <small class="text-muted">Order online for pickup or delivery</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#order" class="btn btn-pink btn-lg me-3">Order Online</a>
+                            <a href="#products" class="btn btn-outline-pink btn-lg">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Our Sweet Selection</h2>
+                    <p class="text-muted mb-5">Discover our delicious range of artisan baked goods, made fresh daily with premium ingredients</p>
+                </div>
+            </div>
+            
+            <!-- Product Filter -->
+            <div class="product-filter text-center mb-5">
+                <button class="btn btn-filter active" data-filter="all">All Items</button>
+                <button class="btn btn-filter" data-filter="breads">Fresh Breads</button>
+                <button class="btn btn-filter" data-filter="cakes">Cakes</button>
+                <button class="btn btn-filter" data-filter="pastries">Pastries</button>
+                <button class="btn btn-filter" data-filter="cookies">Cookies</button>
+            </div>
+
+            <div class="row g-4">
+                <!-- Breads -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="breads">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh44Cz_nts_SWny_Z-NnEjAzxnrCG2TsohhAzzSdQBJ1nfoxKDk92gs89ueyzchGNZJg0dcZBfBnuHZrc-IJw6OA2XLs9ge4p4_1pmHiyOH3rmhRurZWmbrUMvp2Bnpnxqk_R-8qlrXWn5RSVnRxmtkbOdw7Ns-txmX3QpOVrkTSxwhWPF_en5Nkjbp=w721-h536" class="card-img-top" alt="Artisan Sourdough">
+                        <div class="card-body">
+                            <h5 class="card-title">Artisan Sourdough</h5>
+                            <p class="card-text">Traditional sourdough bread with crispy crust and tangy flavor, fermented for 24 hours.</p>
+                            <div class="product-details">
+                                <span class="price">$6.50</span>
+                                <button class="btn btn-pink btn-sm" data-product="sourdough" data-price="6.50">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-leaf text-success me-1"></i>Organic
+                                <i class="fas fa-clock text-warning ms-2 me-1"></i>24hr ferment
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 product-item" data-category="breads">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7DpOVP-4whtGRGrj2UEh3MOTT0HI7Oml1QDHpsTMU6cR2qkZyf7LHmx67cmZa_XL6bkJvwXSPz-YaFlaY9hBxVia0Oe0-2Fxc0ph3Aw31ART3ELjzo70VxhLEVnd5wh-Y6AypSf9Qe3E/s1600/Granary+Loaf_4729+words.jpg" class="card-img-top" alt="Granary Loaf">
+                        <div class="card-body">
+                            <h5 class="card-title">Granary Loaf</h5>
+                            <p class="card-text">Wholesome multigrain bread packed with seeds and grains for extra nutrition and texture.</p>
+                            <div class="product-details">
+                                <span class="price">$5.25</span>
+                                <button class="btn btn-pink btn-sm" data-product="granary" data-price="5.25">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-seedling text-success me-1"></i>Whole grain
+                                <i class="fas fa-heart text-danger ms-2 me-1"></i>Heart healthy
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cakes -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="cakes">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://content.instructables.com/F1Q/HRJT/H2MYDK39/F1QHRJTH2MYDK39.jpg" class="card-img-top" alt="Rainbow Ruffle Cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Rainbow Ruffle Cake</h5>
+                            <p class="card-text">Stunning multi-layer cake with colorful buttercream ruffles, perfect for celebrations.</p>
+                            <div class="product-details">
+                                <span class="price">$45.00</span>
+                                <button class="btn btn-pink btn-sm" data-product="rainbow-cake" data-price="45.00">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-birthday-cake text-pink me-1"></i>Custom colors
+                                <i class="fas fa-users text-primary ms-2 me-1"></i>Serves 12
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="cakes">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://d1j8usc275ufjv.cloudfront.net/flex-cupcakin/media/images/medium/6759d4163eee7_57599a91c2caf78d380e0c534f244c28.jpg" class="card-img-top" alt="Heart Cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Sweetheart Cake</h5>
+                            <p class="card-text">Romantic heart-shaped cake with smooth fondant and delicate decorations.</p>
+                            <div class="product-details">
+                                <span class="price">$35.00</span>
+                                <button class="btn btn-pink btn-sm" data-product="heart-cake" data-price="35.00">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-heart text-danger me-1"></i>Perfect for love
+                                <i class="fas fa-users text-primary ms-2 me-1"></i>Serves 8
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="pastries">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://thumbs.dreamstime.com/b/artisanal-pastries-desserts-pastel-colors-presented-fresh-herbs-rustic-wooden-table-freshly-made-shades-green-353394494.jpg" class="card-img-top" alt="Artisan Pastries">
+                        <div class="card-body">
+                            <h5 class="card-title">French Pastries</h5>
+                            <p class="card-text">Delicate French pastries in beautiful pastel colors, made with traditional techniques.</p>
+                            <div class="product-details">
+                                <span class="price">$4.25</span>
+                                <button class="btn btn-pink btn-sm" data-product="french-pastries" data-price="4.25">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-star text-warning me-1"></i>Chef's special
+                                <i class="fas fa-palette text-info ms-2 me-1"></i>Colorful
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="pastries">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://www.sweetrecipeas.com/wp-content/uploads/2020/01/Pink-Vanilla-Vanilla-Cupcakes-02-720x540.jpeg" class="card-img-top" alt="Pink Cupcakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Pink Vanilla Cupcakes</h5>
+                            <p class="card-text">Moist vanilla cupcakes topped with smooth pink buttercream and elegant decorations.</p>
+                            <div class="product-details">
+                                <span class="price">$3.50</span>
+                                <button class="btn btn-pink btn-sm" data-product="pink-cupcakes" data-price="3.50">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-cubes text-pink me-1"></i>Sold individually
+                                <i class="fas fa-gift text-success ms-2 me-1"></i>Party perfect
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookies -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="cookies">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://i.pinimg.com/originals/93/36/88/933688434ca09e6ebfb417f6fcd3ebac.png" class="card-img-top" alt="Sugar Cookies">
+                        <div class="card-body">
+                            <h5 class="card-title">Decorated Sugar Cookies</h5>
+                            <p class="card-text">Hand-decorated sugar cookies with royal icing, perfect for any occasion or holiday.</p>
+                            <div class="product-details">
+                                <span class="price">$2.75</span>
+                                <button class="btn btn-pink btn-sm" data-product="sugar-cookies" data-price="2.75">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-paint-brush text-primary me-1"></i>Hand decorated
+                                <i class="fas fa-calendar text-warning ms-2 me-1"></i>Custom designs
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="cookies">
+                    <div class="product-card card h-100 sparkle">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4bfCK_jYa4p-iW4LujNqcwuGDmOT_bp8aY1AgWWr8pOf2dymXNdz2tMQQrnDU4XZiuwZduhAMGF9tmiJvz63cC239BQ-cB30Ze1_cyHzO_duSeB_CKilo6SCvhXGJM9o6x13IudLY7enU/s1600/sift+6.JPG" class="card-img-top" alt="Mixed Cookies">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookie Variety Box</h5>
+                            <p class="card-text">Assorted premium cookies including chocolate chip, oatmeal raisin, and snickerdoodles.</p>
+                            <div class="product-details">
+                                <span class="price">$18.50</span>
+                                <button class="btn btn-pink btn-sm" data-product="cookie-box" data-price="18.50">
+                                    <i class="fas fa-shopping-cart me-1"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-cream">
+                            <small class="text-muted">
+                                <i class="fas fa-box text-brown me-1"></i>12 cookies
+                                <i class="fas fa-variety text-purple ms-2 me-1"></i>4 varieties
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary (Initially Hidden) -->
+    <div class="container">
+        <div class="card shadow" id="cartSummary" style="display: none;">
+            <div class="card-header bg-pink text-white text-center">
+                <h5 class="mb-0"><i class="fas fa-shopping-cart me-2"></i>Your Sweet Cart</h5>
+            </div>
+            <div class="card-body">
+                <div id="cartItems"></div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                    <strong>Total: $<span id="cartTotal">0.00</span></strong>
+                    <button class="btn btn-pink" id="checkoutBtn">
+                        <i class="fas fa-credit-card me-2"></i>Proceed to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Online Section -->
+    <section id="order" class="py-5 bg-cream">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Order Online</h2>
+                        <p class="text-muted">Place your order for pickup or delivery and enjoy our fresh baked goods</p>
+                    </div>
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form id="orderForm">
+                                <h5 class="mb-4 text-pink">
+                                    <i class="fas fa-user me-2"></i>Customer Information
+                                </h5>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="customerName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="customerName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="customerPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="customerPhone" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="customerEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="customerEmail" required>
+                                </div>
+                                
+                                <hr class="my-4">
+                                
+                                <h5 class="mb-4 text-pink">
+                                    <i class="fas fa-truck me-2"></i>Order Details
+                                </h5>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="orderType" class="form-label">Order Type</label>
+                                        <select class="form-select" id="orderType" required>
+                                            <option value="">Select type</option>
+                                            <option value="pickup">Pickup</option>
+                                            <option value="delivery">Delivery (+$5.00)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="orderDate" class="form-label">Pickup/Delivery Date</label>
+                                        <input type="date" class="form-control" id="orderDate" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="orderTime" class="form-label">Preferred Time</label>
+                                        <select class="form-select" id="orderTime" required>
+                                            <option value="">Select time</option>
+                                            <option value="7:00 AM">7:00 AM</option>
+                                            <option value="8:00 AM">8:00 AM</option>
+                                            <option value="9:00 AM">9:00 AM</option>
+                                            <option value="10:00 AM">10:00 AM</option>
+                                            <option value="11:00 AM">11:00 AM</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="1:00 PM">1:00 PM</option>
+                                            <option value="2:00 PM">2:00 PM</option>
+                                            <option value="3:00 PM">3:00 PM</option>
+                                            <option value="4:00 PM">4:00 PM</option>
+                                            <option value="5:00 PM">5:00 PM</option>
+                                            <option value="6:00 PM">6:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3" id="deliveryAddressGroup" style="display: none;">
+                                    <label for="deliveryAddress" class="form-label">Delivery Address</label>
+                                    <textarea class="form-control" id="deliveryAddress" rows="3" placeholder="Full delivery address including apartment number..."></textarea>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="specialInstructions" class="form-label">Special Instructions</label>
+                                    <textarea class="form-control" id="specialInstructions" rows="3" placeholder="Any special instructions, allergies, or custom decorations..."></textarea>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-pink btn-lg">
+                                        <i class="fas fa-heart me-2"></i>Place Sweet Order
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Sweet Moments Gallery</h2>
+                    <p class="text-muted mb-5">Take a peek into our bakery and see our delicious creations</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://i.pinimg.com/originals/05/e8/21/05e82122afe7d349dad88890f280c06f.jpg" alt="Bakery Interior" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Our Sweet Shop</h5>
+                                <p>Warm, inviting atmosphere</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://img.freepik.com/premium-photo/classic-bakery-kitchen-with-pastel-lavender-appliances-bakery-display-cases-vintage-bakery-signage_1254992-4436.jpg" alt="Bakery Kitchen" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Our Kitchen</h5>
+                                <p>Where magic happens daily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://media.gettyimages.com/id/1213165121/photo/hispanic-american-female-baker-decorating-vegan-cupcakes.jpg?s=1024x1024&w=gi&k=20&c=cNGOILRbjjkUluRRzWavZ_GLDE_tx-rHX67IJrJQu9k=" alt="Baker Decorating" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Artisan Work</h5>
+                                <p>Hand-decorated with love</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://thumbs.dreamstime.com/b/set-tender-cupcakes-whiped-cream-wedding-concept-cupcake-pastel-pink-blue-yellow-purple-buttercream-plate-table-282892651.jpg" alt="Wedding Cupcakes" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Wedding Treats</h5>
+                                <p>Perfect for special occasions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://cupcakes2delite.com/wp-content/uploads/2012/05/pastel-pink-green-yellow-flower-cupcakes.jpg" alt="Flower Cupcakes" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Floral Designs</h5>
+                                <p>Beautiful edible art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/28965344/pexels-photo-28965344/free-photo-of-assorted-baked-goods-display-in-bakery.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fresh Baked Goods" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Fresh Daily</h5>
+                                <p>Variety of baked goods</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="https://img.freepik.com/premium-photo/cozy-bakery-interior-with-bread-baskets-warm-lighting-artisanal-atmosphere_934877-7310.jpg" alt="About Sweet Dreams" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title text-start">Our Sweet Story</h2>
+                        <p class="text-muted mb-4">Since 1992, Sweet Dreams Bakery has been Chicago's beloved neighborhood bakery. Founded by Maria Gonzalez with her grandmother's secret recipes, we've been creating sweet memories for families across the city.</p>
+                        
+                        <p class="text-muted mb-4">What started as a small family business has grown into Chicago's premier artisan bakery, but we've never forgotten our roots. Every cake, every loaf of bread, and every pastry is still made with the same love and attention to detail that made us who we are today.</p>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stat-card">
+                                    <h3 class="text-pink" data-count="32">0</h3>
+                                    <p class="mb-0">Years of Sweet Success</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-card">
+                                    <h3 class="text-pink" data-count="50000">0</h3>
+                                    <p class="mb-0">Happy Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="stat-card">
+                                    <h3 class="text-pink" data-count="100">0</h3>
+                                    <p class="mb-0">Unique Recipes</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-card">
+                                    <h3 class="text-pink" data-count="15">0</h3>
+                                    <p class="mb-0">Awards Won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h3 class="mb-4 text-pink">Why Choose Sweet Dreams?</h3>
+                        <div class="services-list">
+                            <span class="service-badge">Fresh Daily Baking</span>
+                            <span class="service-badge">Custom Cake Design</span>
+                            <span class="service-badge">Wedding Specialties</span>
+                            <span class="service-badge">Gluten-Free Options</span>
+                            <span class="service-badge">Delivery Service</span>
+                            <span class="service-badge">Catering Available</span>
+                            <span class="service-badge">Special Event Orders</span>
+                            <span class="service-badge">Traditional Recipes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="text-muted mb-5">Get in touch for custom orders, catering, or any sweet questions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4 text-pink">Visit Our Bakery</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt text-pink me-3"></i>
+                            <span>456 Sweet Street<br>Chicago, IL 60614</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone text-pink me-3"></i>
+                            <span>(312) 555-0156</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-pink me-3"></i>
+                            <span>hello@sweetdreamschicago.com</span>
+                        </div>
+                        
+                        <h5 class="mb-3 mt-4 text-pink">Operating Hours</h5>
+                        <div class="hours-list">
+                            <div class="d-flex justify-content-between">
+                                <span>Monday - Friday</span>
+                                <span>6:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Saturday</span>
+                                <span>6:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Sunday</span>
+                                <span>7:00 AM - 7:00 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="#" class="text-pink me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-pink me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-pink me-3"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="text-pink"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="contactName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="inquiryType" class="form-label">Inquiry Type</label>
+                                        <select class="form-select" id="inquiryType" required>
+                                            <option value="">Select type</option>
+                                            <option value="custom-cake">Custom Cake Order</option>
+                                            <option value="catering">Event Catering</option>
+                                            <option value="wholesale">Wholesale Order</option>
+                                            <option value="general">General Question</option>
+                                            <option value="feedback">Feedback</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="eventDate" class="form-label">Event Date (if applicable)</label>
+                                        <input type="date" class="form-control" id="eventDate">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-pink w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Sweet Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-pink mb-3">
+                        <i class="fas fa-birthday-cake me-2"></i>Sweet Dreams Bakery
+                    </h5>
+                    <p>Creating sweet memories in Chicago since 1992. From artisan breads to custom celebration cakes, we bake with love every single day.</p>
+                    <div class="certifications">
+                        <span class="badge bg-success me-2">Organic Certified</span>
+                        <span class="badge bg-info me-2">Local Sourced</span>
+                        <span class="badge bg-warning text-dark">Award Winner</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Our Specialties</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#products" class="text-white-50">Fresh Artisan Breads</a></li>
+                        <li><a href="#products" class="text-white-50">Custom Wedding Cakes</a></li>
+                        <li><a href="#products" class="text-white-50">French Pastries</a></li>
+                        <li><a href="#contact" class="text-white-50">Event Catering</a></li>
+                        <li><a href="#order" class="text-white-50">Online Ordering</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Visit Us</h5>
+                    <p class="text-white-50 mb-1">456 Sweet Street</p>
+                    <p class="text-white-50 mb-1">Chicago, IL 60614</p>
+                    <p class="text-white-50 mb-1">(312) 555-0156</p>
+                    <p class="text-white-50 mb-3">hello@sweetdreamschicago.com</p>
+                    
+                    <div class="newsletter">
+                        <p class="mb-2"><strong>Sweet Newsletter</strong></p>
+                        <small class="text-white-50">Get weekly specials and new product alerts!</small>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50">&copy; 2024 Sweet Dreams Bakery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 me-3">Terms of Service</a>
+                    <a href="#" class="text-white-50">Allergen Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
